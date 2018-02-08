@@ -15,7 +15,7 @@
 				input = element.find('textarea, input');
 
       if( input.val() == '' ) {
-        input.val( label.text() );
+        input.attr( 'placeholder', label.text() );
       } else {
         element.addClass( settings.populatedClass );
       }
@@ -23,9 +23,7 @@
 			input.on( 'focus', function(){
 				element.addClass( settings.focusedClass );
 				
-				if( input.val() === label.text() ){
-					input.val('');
-				} else {
+				if( input.val()){
 					element.addClass( settings.populatedClass );
 				}
 
@@ -35,7 +33,7 @@
 				element.removeClass( settings.focusedClass );
 				
 				if( !input.val() ){
-					input.val( label.text() );
+					input.val('placeholder', label.text() );
 					element.removeClass( settings.populatedClass );
 				}
 

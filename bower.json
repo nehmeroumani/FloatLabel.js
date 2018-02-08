@@ -1,0 +1,14 @@
+{
+  "name": "FloatLabel.js",
+  "homepage": "https://github.com/nehmeroumani/FloatLabel.js",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
